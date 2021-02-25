@@ -101,6 +101,7 @@ func echo(w http.ResponseWriter, r *http.Request) {
 			}
 			wsResponse, _ := json.Marshal(clientEvent)
 			shared.WriteMessage(1, wsResponse)
+			// TODO could trigger a timer to kill the connection if the user hasn't responded (it should be almost instant)
 			userConnection.ChallengeSent = true
 			continue
 		}
