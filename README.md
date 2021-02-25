@@ -41,3 +41,4 @@ Goto "http://localhost:8080/"
 - https://devcenter.heroku.com/articles/websocket-security
 - https://svelte.dev
 - https://github.com/freshteapot/learnalist-api/blob/master/docs/api.user.info.md
+- https://github.com/gorilla/websocket/tree/master/examples
